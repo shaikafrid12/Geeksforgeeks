@@ -1,5 +1,6 @@
 import java.util.HashMap;
-
+import java.util.Scanner;
+import java.util.;
 class Solution {
 
     static boolean isPalindrome(String s, int i, int j) {
@@ -69,16 +70,15 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        scanner sc = new scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        String[] arr = {"geekf", "geeks", "or", "keeg", "abc", "bc"};
+        int n = sc.nextInt();
+        String[] arr = new String[n];
+        for(int i = 0; i < n; i++) {
+            arr[i] = sc.next();
+        }
+
         System.out.println(palindromePair(arr));
-
-        String[] arr2 = {"abc", "xyxcba", "geekst", "or", "bc"};
-        System.out.println(palindromePair(arr2));
-
-        String[] arr3 = {"aa"};
-        System.out.println(palindromePair(arr3));
-
+        sc.close();
     }
 }
