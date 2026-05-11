@@ -1,6 +1,5 @@
 import java.util.HashMap;
-import java.util.Scanner;
-import java.util.;
+import java.util.*;
 class Solution {
 
     static boolean isPalindrome(String s, int i, int j) {
